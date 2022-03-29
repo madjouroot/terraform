@@ -1,0 +1,4 @@
+{public IP: 54.196.193.207 AZ: us-east-1d HOST: i-08cbb20fdefc815da}
+public IP: 18.208.39.7
+AZ: us-east-1c
+HOST: i-01e88940510fdd175

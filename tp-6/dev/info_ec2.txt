@@ -1,0 +1,3 @@
+public IP: 107.22.224.239
+AZ: us-east-1c
+HOST: i-0e8d0301de35ea4ec
