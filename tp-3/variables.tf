@@ -7,3 +7,7 @@ variable "aws_common_tag" {
       Name = "ec2-bems"
   }
 }
+
+variable "bems_SG" {
+   default = "BemsAccess1"
+}

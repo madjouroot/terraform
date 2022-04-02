@@ -1,0 +1,2 @@
+ec2 public IP: 52.87.23.40
+ec2 public IP: 54.81.43.16

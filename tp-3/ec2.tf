@@ -19,12 +19,12 @@ resource "aws_instance" "myec2" {
   instance_type = var.instance_type
   key_name   = "key-madjou"
   tags = var.aws_common_tag
-  security_groups = [aws_security_group.allow_BemsAccess1.name]
+  #security_groups = [aws_security_group.allow_BemsAccess1.name]
+  security_groups = [var.bems_SG]
 }
 
-
 resource "aws_security_group" "allow_BemsAccess1" {
-  name        = "BemsAccess1"
+  name        = var.bems_SG  #"BemsAccess1"
   description = "Allow BemsAccess1 inbound traffic"
  
   ingress {

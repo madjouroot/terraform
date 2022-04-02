@@ -3,14 +3,14 @@ provider "aws" {
     region  = "us-east-1"
 }
 
-terraform {
-  backend "s3" {
-    bucket = "bems-backend"
-    key    = "bems.tfstate"
-    region = "us-east-1"
-    shared_credentials_file = "~/.aws/credentials"    
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "bems-backend"
+#     key    = "bems.tfstate"
+#     region = "us-east-1"
+#     shared_credentials_file = "~/.aws/credentials"    
+#   }
+# }
 
 data "aws_ami" "myServer" {
   most_recent = true
