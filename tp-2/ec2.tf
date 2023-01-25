@@ -1,15 +1,15 @@
 provider "aws" {
     #shared_config_files      = ["~/.aws/config"]
-    shared_credentials_files = ["~/.aws/credentials"]
+    #shared_credentials_files = ["~/.aws/credentials"]
   region  = "us-east-1"
 }
 
 resource "aws_instance" "myec2" {
-  ami           = "ami-0c02fb55956c7d316" 
+  ami           = "ami-0778521d914d23bc1" 
   instance_type = "t2.micro"
-  key_name   = "key-madjou"
+  key_name   = "jenkins_key"
   tags = {
-    Name = "ec2-bems"
+    Name = "myUbuntu"
   }
 
   # root_block_device {
