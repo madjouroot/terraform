@@ -11,7 +11,7 @@ resource "aws_instance" "myec2" {
   instance_type = "t2.micro"
   key_name   = "jenkins_key"
   tags = {
-    Name = "myec2"
+    Name = "myubuntu"
   }
 
   # root_block_device {
